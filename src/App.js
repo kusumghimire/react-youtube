@@ -9,9 +9,9 @@ class App extends Component {
   
   constructor(props){
     super(props)
-    YTSearch({key:API_KEY, term:'songs'},(data)=>){
+    YTSearch({key:API_KEY, term:'songs'},(data)=>{
       console.log(data)
-    }
+    })
   }
   render() {
     return (
