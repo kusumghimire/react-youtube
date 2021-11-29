@@ -9,13 +9,13 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {videos:[] }
+    this.state = {videos:[]}
     YTSearch({ key: API_KEY, term: "songs" }, (videos) => {
       this.setState(videos);
       console.log(videos)
     });
   }
-  
+
   render() {
     return (
         <div className="App">

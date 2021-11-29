@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
  
 
-const videolist = () =>{
+const VideoDetail = (props) =>{
     return(
-        <h1>Video Section Here</h1>
+        <div className="video-detail col-md-8">
+            <div className="embed-responsive embed-responsive-16by-9">
+               <iframe className="embed-responsive-itme" src={} ></iframe>
+            </div>
+
+        </div>
     )
 }
 
-export default videolist;
+export default VideoDetail;
