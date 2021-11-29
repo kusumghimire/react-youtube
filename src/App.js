@@ -3,6 +3,7 @@ import "./App.css";
 import SearchBar from "./components/search_bar";
 import YTSearch from "youtube-api-search";
 import Videolist from './components/video_list';
+import VideoDetail from "./components/video_detail";
 
 const API_KEY = "AIzaSyCCB-D6ee9HtNq2bJRdPMLmI6_VFEZfEBI";
 class App extends Component {
@@ -19,8 +20,8 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <h1>Hello there</h1>
           <SearchBar />
+          <VideoDetail video={this.state.videos[0] } />
           <Videolist videos={this.state.videos} />
         </div>
     );
